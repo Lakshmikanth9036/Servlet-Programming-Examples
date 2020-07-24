@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="RegistrationServlet" method="POST">
+        	<table>
+        		<tr>
+        			<td>Name:</td>
+        			<td><input type="text" name="fullName" placeholder="Full Name" required="required"></td>
+        		</tr>
+        		<tr>
+        			<td>Email:</td>
+        			<td><input type="email" name="email" placeholder="Email" required="required"></td>
+        		</tr>
+        		<tr>
+        			<td>Mobile:</td>
+        			<td><input type="tel" pattern="[789][0-9]{9}" name="mobile" placeholder="Mobile" required="required"></td>
+        		</tr>
+        		<tr>
+        			<td><input type="submit" value="Register"></td>
+        		</tr>
+        	</table>
+        </form>
+    </body>
+</html>

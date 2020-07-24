@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+    
+   <display-name>servlet-config-using-xml</display-name>
+   <welcome-file-list>
+   	<welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+   
+   <servlet>
+   	<servlet-name>WelcomeServlet1</servlet-name>
+   	<servlet-class>com.Biditvats.servlet.WelcomeServlet1</servlet-class>
+   	<init-param>
+   		<param-name>username</param-name>
+   		<param-value>Biditvats</param-value>
+   	</init-param>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>WelcomeServlet1</servlet-name>
+   	<url-pattern>/WelcomeServlet1</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   	<servlet-name>WelcomeServlet2</servlet-name>
+   	<servlet-class>com.Biditvats.servlet.WelcomeServlet2</servlet-class>
+   	<init-param>
+   		<param-name>password</param-name>
+   		<param-value>123456</param-value>
+   	</init-param>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>WelcomeServlet2</servlet-name>
+   	<url-pattern>/WelcomeServlet2</url-pattern>
+   </servlet-mapping>
+    
+    
+</web-app>

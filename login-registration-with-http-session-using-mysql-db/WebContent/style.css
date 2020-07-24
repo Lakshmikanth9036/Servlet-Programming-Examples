@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+body{
+	font-family: verdana, sans-serif;
+	font-size:  16px;
+	text-align: center;
+}
+
+input{
+	width: 100%;
+	font-family: verdana, sans-serif;
+	font-size:  16px;
+}
+
+input[submit]{
+	border-bottom-color: #008000;
+	color: #FFF;
+}
+
+table{
+	margin-left: 30%;
+	width: 40%;
+	border: 1px solid #ccc;
+	padding: 5px;
+	text-align: left;
+}
+
+table tr{
+	padding-bottom: 5px;
+}
